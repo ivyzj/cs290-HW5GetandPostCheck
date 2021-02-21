@@ -1,0 +1,21 @@
+<h1>POST Request Received</h1>
+<h2>You sent the following data in a POST request:</h2>
+
+<table>
+    <caption>Data received in the request <em>body</em></caption>
+    {{#each body_dataList}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.value}}</td>
+    </tr>
+    {{/each}}
+</table>
+<table>
+    <caption>Data received in the request <em>query</em></caption>
+    {{#each query_dataList}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.value}}</td>
+    </tr>
+    {{/each}}
+</table>
