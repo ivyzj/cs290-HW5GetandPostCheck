@@ -5,8 +5,8 @@
     <caption>Data received in the request <em>body</em></caption>
     {{#each body_dataList}}
     <tr>
-        <td>{{this.name}}</td>
-        <td>{{this.value}}</td>
+        <th colspan="2">{{this.name}}</th>
+        <td colspan="2">{{this.value}}</td>
     </tr>
     {{/each}}
 </table>
@@ -14,8 +14,8 @@
     <caption>Data received in the request <em>query</em></caption>
     {{#each query_dataList}}
     <tr>
-        <td>{{this.name}}</td>
-        <td>{{this.value}}</td>
+        <th colspan="2">{{this.name}}</th>
+        <td colspan="2">{{this.value}}</td>
     </tr>
     {{/each}}
 </table>

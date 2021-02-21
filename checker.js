@@ -27,15 +27,11 @@ app.get("/get", function (req, res) {
 });
 
 app.post("/post", function (req, res) {
-    var context = {}
-
     // Data received in the request body
 	var bodyParams = [];
     for (var p in req.body) {
         bodyParams.push({ 'name': p, 'value': req.body[p] });
     };
-
-    context.body_dataList = bodyParams;
 
     // Data received in the request query
     var queryParams = []
@@ -43,6 +39,8 @@ app.post("/post", function (req, res) {
         queryParams.push({'name':q,'value':req.query[q]})
     };
     
+    var context = {}
+    context.body_dataList = bodyParams;
     context.query_dataList = queryParams;
 
 	res.render("postRequest", context);
