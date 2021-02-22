@@ -3,6 +3,10 @@
 
 <table>
     <caption>Data received in the request <em>body</em></caption>
+    <tr>
+        <th>Name</th>
+        <th>value</th>
+    </tr>
     {{#each body_dataList}}
     <tr>
         <th colspan="2">{{this.name}}</th>
@@ -12,6 +16,10 @@
 </table>
 <table>
     <caption>Data received in the request <em>query</em></caption>
+    <tr>
+        <th>Name</th>
+        <th>value</th>
+    </tr>
     {{#each query_dataList}}
     <tr>
         <th colspan="2">{{this.name}}</th>
