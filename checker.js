@@ -47,10 +47,6 @@ app.post("/post", function (req, res) {
     
 });
 
-// app.use(function (req, res) {
-//     res.render("home", context);
-// });
-
 
 app.use(function (req, res) {
     res.status(404);
